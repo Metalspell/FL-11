@@ -1,0 +1,375 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+@media (max-width: 1400px) {
+  body {
+    font-family: roboto;
+  }
+  .post-1 {
+  	background: #B71757;
+  }
+  .post-2 {
+  	background: #0D7E71;
+  }
+  .post-3 {
+  	background: #b1660e;
+  }
+  .post-4 {
+  	background: #d12767;
+  }
+  .post-5 {
+  	background: #2d95bb;
+  }
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0b192f;
+  }
+  .general-wrapper {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+  }
+  .nav-panel {
+    background-color: #162b4d;
+  }
+  .nav-panel,
+  .footer-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vw;
+  }
+  .logo {
+    margin-left: 1.5vw;
+  }
+  .logo p {
+    color: #FFFFFF;
+    font-size: 2.3vw;
+    font-weight: 100;
+  }
+  .logo span {
+    color: #cb285d;
+  }
+  .nav-links {
+    width: 35%;
+    margin-right: 3vw;
+    height: 100%;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .nav-links ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  .nav-links ul li {
+    display: flex;
+    align-items: center;
+  }
+  .nav-links ul li:hover {
+    background-color: #FFF;
+  }
+  .nav-links ul a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.2vw;
+  }
+  .content-wrapper {
+    height: auto;
+    margin-top: 2vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-content {
+    width: 73%;
+  }
+  aside {
+    width: 25%;
+  }
+  .items {
+    display: flex;
+  }
+  .items:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  .img-wrapper {
+    width: 50%;
+  }
+  .img-wrapper img {
+    width: 100%;
+    height: 100%;
+  }
+  .description {
+    width: 50%;
+    display: flex;
+  }
+  @media (min-width: 769px) {
+    .items:nth-child(even) >.description {
+      flex-direction: row-reverse;
+    }
+    .items:nth-child(even) >.description>.text-block {
+      text-align: right;
+      margin-left: 0vw;
+      margin-right: 2vw;
+    }
+  }
+  .text-block {
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2vw;
+    width: 80%;
+  }
+  .text-block h2 {
+    width: 3vw;
+    font-size: 3vw;
+    font-weight: lighter;
+    margin-bottom: 1vw;
+  }
+  .text-block p {
+    font-weight: lighter;
+    font-size: 1.1vw;
+  }
+  .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    color: #ffffff;
+    opacity: 0.3;
+    font-weight: lighter;
+  }
+  .date h2 {
+    font-weight: lighter;
+    font-size: 3vw;
+  }
+  .date p {
+    font-size: 1.2vw;
+  }
+  @media (min-width: 769px) {
+    .items:nth-child(2n) {
+      flex-direction: row-reverse;
+    }
+  }
+  .bright-items {
+    width: 100%;
+  }
+  .bright-description {
+    display: flex;
+    flex-direction: row;
+  }
+  .bright-description .text-block {
+    padding: 2vw 0vw 2vw 0vw;
+  }
+  .bright-description .text-block,
+  .text-block h2 {
+    width: auto;
+  }
+  .news-items {
+    width: 100%;
+    margin-bottom: 1.5vw;
+  }
+  .news-img {
+    display: flex;
+  }
+  .news-items img {
+    width: 100%;
+    height: 100%;
+  }
+  .news-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 2vw 2vw 2vw 2vw;
+  }
+  .news-text h3 {
+    font-size: 1.7vw;
+    font-weight: 300;
+  }
+  .news-text p {
+    font-weight: lighter;
+    font-size: 0.9vw;
+    line-height: 1.5vw;
+    margin-top: 1vw;
+  }
+  footer {
+    margin-top: 2vw;
+  }
+  .footer-panel {
+    padding: 0vw 2vw 0vw 2vw;
+    background-color: #162b4d;
+  }
+  .footer-panel p {
+    color: #FFF;
+    font-size: 1vw;
+    opacity: 0.7;
+    font-weight: lighter;
+    line-height: 1.5vw;
+  }
+  .autor p {
+    width: 8vw;
+  }
+}
+@media (max-width: 768px) {
+  .general-wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-panel,
+  .footer-panel {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25vw;
+  }
+  .burger-menu {
+    color: #FFF;
+    display: flex;
+    font-size: 2.2vw;
+  }
+  .logo {
+    margin: 0;
+  }
+  .logo p {
+    font-size: 4.3vw;
+  }
+  .main-content {
+    width: 55%;
+  }
+  aside {
+    width: 42%;
+  }
+  .items {
+    flex-direction: column;
+  }
+  .img-wrapper {
+    width: 100%;
+    display: flex;
+  }
+  .description {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 46.58vw;
+    justify-content: space-around;
+  }
+  .text-block {
+    margin: 0;
+  }
+  .text-block h2 {
+    font-size: 6vw;
+  }
+  .text-block p {
+    padding-top: 2vw;
+    font-size: 1.7vw;
+  }
+  .date h2 {
+    font-size: 6vw;
+  }
+  .date p {
+    font-size: 2.2vw;
+  }
+  .news-text h3 {
+    font-size: 2.7vw;
+  }
+  .news-text p {
+    font-size: 1.9vw;
+  }
+  .bright-description {
+    flex-direction: column;
+    align-items: center;
+    padding: 0vw 5vw 0vw 5vw;
+  }
+  .footer-panel {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .autor p {
+    width: auto;
+    width: 16vw;
+    font-size: 2vw;
+    line-height: 3vw;
+  }
+  .footer-description p {
+    font-size: 2vw;
+    line-height: 3vw;
+  }
+  .news-text {
+    justify-content: center;
+    padding: 4vw 4vw 4vw 4vw;
+  }
+  .news-text h3 {
+    font-size: 3.5vw;
+  }
+  .news-text p {
+    margin-top: 2vw;
+    font-size: 1.6vw;
+    line-height: 3vw;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-wrapper {
+    margin-top: 4vw;
+  }
+  aside {
+    display: none;
+  }
+  .nav-panel,
+  .footer-panel {
+    height: 35vw;
+  }
+  .logo p {
+    font-size: 6.3vw;
+  }
+  .burger-menu {
+    font-size: 3.4vw;
+  }
+  .main-content {
+    width: 100%;
+  }
+  .description {
+    height: 88.33vw;
+  }
+  .text-block h2 {
+    font-size: 10vw;
+  }
+  .text-block p {
+    font-size: 4vw;
+  }
+  .date h2 {
+    font-size: 13vw;
+  }
+  .date p {
+    font-size: 7vw;
+  }
+  footer {
+    margin-top: 6vw;
+  }
+  .footer-description p {
+    font-size: 3vw;
+    line-height: 5vw;
+    padding: 0vw 5vw 0vw 5vw;
+  }
+  .autor p {
+    font-size: 3vw;
+    line-height: 5vw;
+    width: 25vw;
+  }
+}
