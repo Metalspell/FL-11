@@ -1,7 +1,7 @@
-let a1 = +prompt('Enter the value of a1 - this is one the edge of line');
-let a2 = +prompt('Enter the value of a2 - this is one the edge of line');
-let c1 = +prompt('Enter the value of c1 - this is other the edge of line');
-let c2 = +prompt('Enter the value of c2 - this is other the edge of line');
+let a1 = +prompt('Enter the value of a1 - this is one edge of the line');
+let a2 = +prompt('Enter the value of a2 - this is one edge of the line');
+let c1 = +prompt('Enter the value of c1 - this is other edge of the line');
+let c2 = +prompt('Enter the value of c2 - this is other edge of the line');
 let b1 = +prompt('Enter the value of b1 - this is the expected coordinate of the midpoint of the segment');
 let b2 = +prompt('Enter the value of b2 - this is the expected coordinate of the midpoint of the segment');
 let numberFilter = /^[0-9]*[.]?[0-9]+$/;
