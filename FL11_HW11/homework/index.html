@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 11 - TODO Cat List</title>
+  <link rel="stylesheet" href="./assets/material-icons/material-icons.css">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+<div id="root">
+  <header>
+    <div class="name-list">
+      <h1>TODO Cat List</h1>
+      <p class="atention">Maximum item per list are created</p>
+    </div>
+  </header>
+  <main>
+    <div class="input-action">
+      <input type="text" class="action-enter" placeholder="Add new action">
+      <i class="material-icons" onclick="enterTheData();" id="add">add_box</i>
+    </div>
+    <hr class=horizontal-line>
+    <ul class="action-list">
+      <li id ='1' class="items" draggable="true">
+        <input class='checkbox1' onclick="denied(this.parentNode.id);" type="checkbox"> 
+        <span class="position-name">Find the cat</span>
+        <input type="text" class="edit-data edit-data1">
+        <i class="material-icons add-edited add-edited1" onclick="enterTheEditedData(this.parentNode.id);">save</i>
+        <i class="material-icons edit" onclick="editTheData(this.parentNode.id);">edit</i>
+        <i class="material-icons delete" onclick="deleteTheData(this.parentNode.id);">delete</i>
+      </li>
+      <li id ='2' class="items" draggable="true">
+        <input class='checkbox2' onclick="denied(this.parentNode.id);" type="checkbox"> 
+        <span class="position-name">Prepare cat's carry</span>
+        <input type="text" class="edit-data edit-data2">
+        <i class="material-icons add-edited add-edited2" onclick="enterTheEditedData(this.parentNode.id);">save</i>
+        <i class="material-icons edit" onclick="editTheData(this.parentNode.id);">edit</i>
+        <i class="material-icons delete" onclick="deleteTheData(this.parentNode.id);">delete</i>
+      </li>
+      <li id ='3' class="items" draggable="true">
+        <input class='checkbox3' onclick="denied(this.parentNode.id);" type="checkbox"> 
+        <span class="position-name">Bath the cat</span>
+        <input type="text" class="edit-data edit-data3">
+        <i class="material-icons add-edited add-edited3" onclick="enterTheEditedData(this.parentNode.id);">save</i>
+        <i class="material-icons edit" onclick="editTheData(this.parentNode.id);">edit</i>
+        <i class="material-icons delete" onclick="deleteTheData(this.parentNode.id);" >delete</i>
+      </li>
+    </ul>
+  </main>
+</div>
+
+<script src="./src/app.js"></script>
+</body>
+</html>

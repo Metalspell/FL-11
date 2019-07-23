@@ -1,0 +1,84 @@
+#root {
+  width: 80%;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+}
+.header	{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.name-list {
+  color: #45b9fe;
+  text-align: center;
+  font-size: 2vw;
+}
+.name-list p {
+  display: none;
+}
+.main {
+  width: 100%;
+}
+.input-action {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.input-action input {
+  width: 90%;
+  color: #45b9fe;
+  font-size: 1.5vw;
+  padding: 1.5vw 0vw 1.5vw 2vw;
+}
+.input-action i {
+  color: #999;
+  font-size: 4vw;
+  margin-left: 2vw;
+}
+i {
+  color: #00A9EB;
+  cursor: pointer;
+}
+.horizontal-line {
+  border: 0px;
+  background-color: #E2F1FD;
+  width: 100%;
+  height: 0.7vw;
+  margin-top: 3vw;
+}
+.action-list {
+  list-style: none;
+  padding: 0px;
+}
+input[type="checkbox"] {
+  transform: scale(1.5);
+}
+.position-name {
+  color: #45b9fe;
+  font-size: 1.5vw;
+  padding-left: 1vw;
+}
+.items i {
+  margin-left: 1vw;
+}
+.delete {
+  float: right;
+}
+.edit-data,
+.add-edited {
+  display: none;
+}
+.edit-data {
+  margin-left: 1vw;
+}
+
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
